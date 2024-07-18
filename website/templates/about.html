@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DAB 111(Introduction to Python)</title>
+
+        <style>
+            table {
+                width: 85%;
+                margin: auto;
+                border-collapse: collapse;
+                font-size: 12px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About</h1>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Link To Home page</a></li>
+        </ul>
+        <br />
+
+        <h2>Data Source</h2>
+        <p>The Data used for this project was gotten from Data World. A full view of the utilized data can be found <a href="https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales?resource=download" target="_blank">here</a></p>
+        
+        <br />
+
+        <h2>Feature Definition</h2>
+        <table>
+            <thead>
+                <tr><th>Variable Name</th><th>Data Type</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Invoice ID</td>
+                    <td>categorical</td>
+                    <td>example 750-67-8428</td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td>categorical</td>
+                    <td>A, B, C</td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>categorical</td>
+                    <td>Yangon</td>
+                </tr>
+                <tr>
+                    <td>Customer type</td>
+                    <td>categorical</td>
+                    <td>Member, Normal</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>categorical</td>
+                    <td>Male, Female</td>
+                </tr>
+                <tr>
+                    <td>Product line</td>
+                    <td>categorical</td>
+                    <td>Health and beauty</td>
+                </tr>
+                <tr>
+                    <td>Unit price</td>
+                    <td>continuous</td>
+                    <td>from 10.08 to 99.96</td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td>continuous</td>
+                    <td>from 1 to 10</td>
+                </tr>
+                <tr>
+                    <td>Tax 5%</td>
+                    <td>continuous</td>
+                    <td>from 0.5085 to 49.65</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>continuous</td>
+                    <td>from 10.6785 to 1042.65</td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>categorical</td>
+                    <td>example 1/5/2019</td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td>continuous</td>
+                    <td>from 10:00 to 20:59</td>
+                </tr>
+                <tr>
+                    <td>Payment</td>
+                    <td>categorical</td>
+                    <td>example Ewallet, Cash</td>
+                </tr>
+                <tr>
+                    <td>cogs</td>
+                    <td>continuous</td>
+                    <td>from 10.17 to 993</td>
+                </tr>
+                <tr>
+                    <td>gross margin percentage</td>
+                    <td>continuous</td>
+                    <td>4.761904762</td>
+                </tr>
+                <tr>
+                    <td>gross income</td>
+                    <td>continuous</td>
+                    <td>from 0.5085 to 49.65</td>
+                </tr>
+                <tr>
+                    <td>Rating</td>
+                    <td>categorical</td>
+                    <td>from 4.0 to 10.0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br />
+
+        <footer>
+            <p>&copy; 2024 Spring Semester Group 1, Section B. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
