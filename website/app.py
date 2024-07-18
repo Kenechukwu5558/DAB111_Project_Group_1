@@ -1,15 +1,14 @@
 from flask import Flask, render_template
 import sqlite3
 import pathlib
+from werkzeug.serving import run_simple
 
 cwd = pathlib.Path.cwd()
 basic_path = pathlib.Path(r'C:\Users\User1\OneDrive\Documents\KENE STUDY MATERIALS\DAB111.2\project\Kenechukwu5558\Database')
 database_name = "customers.db"
 database_path = basic_path / database_name
-print(database_path)
 
-app = Flask(__name__)
-
+app = Flask(__name__,template_folder='templates')
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -31,5 +30,4 @@ def data():
 
     return render_template("table_data.html", columns=columns, customer=customer)
 
-if __name__=="__main__":
-    app.run(debug=True)
+run_simple('localhost', 5000,app,use_reloader=True, use_debugger=False)
